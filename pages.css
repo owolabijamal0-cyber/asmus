@@ -1,0 +1,45 @@
+
+/* ASMUS MOSQUE — page layouts and interactive additions */
+:root{color-scheme:dark}
+.page-heading{text-align:center;padding:76px 7% 38px;background:radial-gradient(circle at 50% 0%,rgba(155,99,230,.18),transparent 65%)}
+.page-heading h1{font-size:clamp(38px,6vw,66px);margin:12px 0}
+.page-heading p{color:var(--muted);max-width:720px;margin:0 auto}
+.page-content{width:min(1160px,88%);margin:0 auto;padding:38px 0 88px}
+.content-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.content-card,.contact-form,.account-card,.prayer-panel,.quran-panel,.tool-panel{display:block;padding:27px;background:linear-gradient(145deg,var(--surface),var(--bg-soft));border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);color:var(--text)}
+.content-card{transition:transform .25s,border-color .25s}.content-card:hover{transform:translateY(-5px);border-color:rgba(177,122,255,.5)}
+.content-card p,.muted{color:var(--muted)}
+.gold{color:var(--gold-light)}
+.action-btn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border:1px solid rgba(216,183,121,.65);border-radius:50px;background:var(--gradient);color:white;font-weight:700;cursor:pointer;transition:.2s}
+.action-btn:hover,.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.form-field{display:grid;gap:7px;margin:13px 0}.form-field label{color:var(--muted);font-size:13px}
+.form-field input,.form-field textarea,.form-field select,.search-input,.form-field button{width:100%;padding:13px 15px;background:var(--bg-soft);border:1px solid var(--border);border-radius:10px;color:var(--text);font:inherit}
+.form-field textarea{min-height:130px;resize:vertical}
+.contact-layout,.donation-layout{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.contact-number-card,.account-row{padding:16px 0;border-bottom:1px solid var(--border)}
+.contact-number-card span,.account-row span{display:block;color:var(--muted);font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.contact-number-card a{font-size:23px;color:var(--gold-light);font-weight:700}.account-row strong{display:block;color:var(--gold-light);font-size:18px;overflow-wrap:anywhere}
+.notice{padding:17px 20px;margin-top:22px;background:rgba(216,184,241,.06);border:1px solid var(--border);border-radius:12px;color:var(--muted)}
+.dua-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.dua-tabs button,.filter-btn{padding:9px 16px;background:var(--surface);border:1px solid var(--border);border-radius:30px;color:var(--text);cursor:pointer}
+.dua-tabs button.active,.filter-btn.active{background:var(--purple-dark);border-color:var(--purple);color:white}
+.dua-card{padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.dua-card .arabic,.arabic{font-family:"Noto Naskh Arabic","Traditional Arabic",serif;font-size:29px;line-height:2.1;text-align:center;direction:rtl;color:var(--gold-light);margin:18px 0}
+.dua-card p{color:var(--muted)}.dua-meta{font-size:12px;color:var(--gold)}
+.prayer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}
+.prayer-time{text-align:center;padding:22px;background:var(--surface);border:1px solid var(--border);border-radius:14px}.prayer-time strong{display:block;color:var(--gold-light);font-size:25px}
+.surah-item{padding:20px;margin:12px 0;background:var(--surface);border:1px solid var(--border);border-radius:14px}.surah-item h3{margin:0}.surah-item p{color:var(--muted)}
+.footer{padding:35px 7%;border-top:1px solid var(--border);color:var(--muted);text-align:center}.footer a{margin:0 9px}
+.inline-actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}.inline-actions button{cursor:pointer}
+.reader-controls{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;margin:22px 0}.reader-controls select,.reader-controls input{min-width:0;padding:13px;background:var(--bg-soft);color:var(--text);border:1px solid var(--border);border-radius:10px}
+.ayah{padding:22px 5px;border-bottom:1px solid var(--border)}.ayah-ar{font-family:"Noto Naskh Arabic","Traditional Arabic",serif;font-size:30px;line-height:2.1;text-align:right;direction:rtl;color:var(--gold-light)}.ayah-en{color:var(--muted);margin:12px 0}.ayah-tools{display:flex;gap:8px;flex-wrap:wrap}.ayah-tools button,.small-btn{padding:7px 12px;border:1px solid var(--border);border-radius:30px;background:var(--surface-light);color:var(--text);cursor:pointer}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.gallery-item{position:relative;overflow:hidden;border-radius:15px;border:1px solid var(--border);background:var(--surface)}.gallery-item img{display:block;width:100%;height:245px;object-fit:cover;transition:transform .3s}.gallery-item:hover img{transform:scale(1.04)}.gallery-item p{padding:0 15px;color:var(--muted);font-size:13px}.lightbox{position:fixed;inset:0;z-index:5000;display:none;place-items:center;padding:25px;background:rgba(5,3,9,.92)}.lightbox.open{display:grid}.lightbox img{max-width:min(100%,1000px);max-height:82vh;border-radius:12px}.lightbox button{position:absolute;top:20px;right:25px;padding:10px 16px;border:0;border-radius:30px;background:var(--gold);color:#180e20;font-weight:700;cursor:pointer}
+.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.counter-number{font-size:clamp(52px,10vw,85px);font-weight:800;color:var(--gold-light);text-align:center;font-variant-numeric:tabular-nums}.counter-controls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.counter-main{width:150px;height:150px;border:0;border-radius:50%;background:var(--gradient);color:white;font-size:23px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.25);cursor:pointer}.counter-main:active{transform:scale(.96)}
+.qibla-result{font-size:32px;color:var(--gold-light);font-weight:800}.qibla-compass{width:190px;height:190px;margin:18px auto;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,var(--surface-light),var(--bg));position:relative}.qibla-needle{font-size:65px;color:var(--gold-light);transform-origin:50% 50%;transition:transform .4s}
+.install-banner{display:none;margin:20px auto;padding:14px 18px;border:1px solid var(--border);border-radius:12px;background:var(--surface);max-width:900px}.install-banner.show{display:flex;align-items:center;justify-content:space-between;gap:12px}
+@media(max-width:850px){.content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-layout,.donation-layout,.tool-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reader-controls{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.content-grid,.prayer-grid,.gallery-grid{grid-template-columns:1fr}.page-heading{padding-top:55px}.page-content{width:90%}.reader-controls{grid-template-columns:1fr}.gallery-item img{height:230px}}
+body.light-mode{color-scheme:light}
+body.light-mode .page-heading{background:radial-gradient(circle at 50% 0%,rgba(155,99,230,.12),transparent 65%)}
+body.light-mode .content-card,body.light-mode .contact-form,body.light-mode .account-card,body.light-mode .prayer-panel,body.light-mode .quran-panel,body.light-mode .tool-panel,body.light-mode .dua-card,body.light-mode .surah-item{background:#fff;color:#281637}
+body.light-mode .form-field input,body.light-mode .form-field textarea,body.light-mode .form-field select,body.light-mode .search-input,body.light-mode .reader-controls select,body.light-mode .reader-controls input{background:#fff;color:#281637}
+body.light-mode .ayah-en,body.light-mode .content-card p,body.light-mode .muted{color:#71657a}
