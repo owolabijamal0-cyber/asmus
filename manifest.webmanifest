@@ -1,0 +1,17 @@
+{
+  "name": "Asmus Mosque",
+  "short_name": "Asmus Mosque",
+  "description": "Worship, learning, remembrance and community.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#100a19",
+  "theme_color": "#100a19",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

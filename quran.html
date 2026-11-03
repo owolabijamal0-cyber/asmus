@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Asmus Mosque — worship, learning, remembrance and community.">
+<meta name="theme-color" content="#100a19"><link rel="manifest" href="manifest.webmanifest">
+<title>Quran | Asmus Mosque</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages.css">
+<script src="script.js" defer></script><script src="quran.js" defer></script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="navbar"><a class="logo" href="index.html">ASMUS <span>MOSQUE</span></a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="quran.html">Quran</a><a href="prayer.html">Prayer Times</a><a href="duas.html">Duas</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a><a href="tools.html">Islamic Tools</a></nav><div class="nav-actions"><button id="themeToggle" type="button" aria-label="Toggle light and dark theme">☼</button></div></header>
+<div class="install-banner" id="installBanner"><span>Install Asmus Mosque on your device for quick access.</span><button class="btn" id="installButton" type="button">Install</button></div>
+<main id="main"><section class="page-heading"><p class="eyebrow">THE NOBLE QURAN</p><h1>Read and <span class="gold">Reflect</span></h1><p>Browse all 114 surahs in Arabic, with English translation and recitation audio. Internet access is required.</p></section><section class="page-content"><div class="quran-panel"><p class="eyebrow">DAILY VERSE · CHANGES EVERY 12 HOURS</p><div id="dailyVerseArabic" class="arabic"></div><h2 id="dailyVerseTranslation" style="text-align:center"></h2><p id="dailyVerseRef" class="muted" style="text-align:center"></p><div style="text-align:center"><button class="btn" id="anotherVerse" type="button">Another reminder</button></div></div><div style="margin-top:45px"><h2>Quran reader</h2><p class="muted">Choose a surah to load the full Arabic text and English translation.</p><div class="reader-controls"><select id="surahSelect" aria-label="Choose surah"><option value="1">Loading surahs…</option></select><select id="translationSelect" aria-label="Choose English translation"><option value="en.sahih">Sahih International</option><option value="en.asad">Muhammad Asad</option></select><button class="btn" id="loadSurah" type="button">Load surah</button></div><p id="quranStatus" class="muted" aria-live="polite">Loading Quran index…</p><div id="surahInfo"></div><audio id="surahAudio" controls preload="none" style="width:100%;margin:15px 0;display:none"></audio><div id="ayahList"></div></div></section></main>
+<footer class="footer"><p><a href="index.html">Home</a><a href="quran.html">Quran</a><a href="prayer.html">Prayer Times</a><a href="duas.html">Duas</a><a href="tools.html">Islamic Tools</a><a href="contact.html">Contact</a></p><p>© <span data-year></span> Asmus Mosque. Faith • Knowledge • Community</p><p class="muted">Verify prayer timings and religious references with trusted local scholars and mosque authorities.</p></footer>
+</body></html>
